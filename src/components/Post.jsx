@@ -96,8 +96,8 @@ export function Post({author, publishedAt, content}){
                         Publicar
                     </button>                   
                 </footer>
-
-                <div className={styles.commentList}>
+            </form>
+            <div className={styles.commentList}>
                     {comments.map(comment => {
                         return (
                         <Comment 
@@ -108,7 +108,6 @@ export function Post({author, publishedAt, content}){
                         )
                     })}
                 </div> 
-            </form>
         </article>
     )
 }
